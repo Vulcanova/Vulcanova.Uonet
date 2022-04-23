@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vulcanova.Uonet", "Vulcanova.Uonet\Vulcanova.Uonet.csproj", "{0086BF5B-BE34-4F13-88C9-D3873E9A6E86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vulcanova.Uonet.UnitTests", "Vulcanova.Uonet.UnitTests\Vulcanova.Uonet.UnitTests.csproj", "{EBC0B182-D977-467F-A1C0-D761B4F3ADE3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0086BF5B-BE34-4F13-88C9-D3873E9A6E86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0086BF5B-BE34-4F13-88C9-D3873E9A6E86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0086BF5B-BE34-4F13-88C9-D3873E9A6E86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0086BF5B-BE34-4F13-88C9-D3873E9A6E86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBC0B182-D977-467F-A1C0-D761B4F3ADE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBC0B182-D977-467F-A1C0-D761B4F3ADE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBC0B182-D977-467F-A1C0-D761B4F3ADE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBC0B182-D977-467F-A1C0-D761B4F3ADE3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
