@@ -3,6 +3,10 @@
     <PropertyGroup>
         <TargetFramework>netstandard2.1</TargetFramework>
         <LangVersion>9.0</LangVersion>
+        <PackageId>Vulcanova.Uonet</PackageId>
+        <Version>1.0.0</Version>
+        <Authors>Vulcanova Contributors</Authors>
+        <Company>Vulcanova</Company>
     </PropertyGroup>
 
     <ItemGroup>
