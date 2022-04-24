@@ -1,4 +1,5 @@
 # Vulcanova.Uonet
+[![Nuget](https://img.shields.io/nuget/v/Vulcanova.Uonet)](https://www.nuget.org/packages/Vulcanova.Uonet/)
 [![Discord](https://discord.com/api/guilds/951860775503421460/widget.png?style=shield)](https://discord.gg/GaCQknqRjT)
 
 Nieoficjalny klient mobilnego API dziennika Vulcan UONET+
