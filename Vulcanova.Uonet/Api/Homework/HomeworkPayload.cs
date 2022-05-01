@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using Vulcanova.Uonet.Api.Common.Models;
 
-namespace Vulcanova.Uonet.Api.Homeworks
+namespace Vulcanova.Uonet.Api.Homework
 {
     public class HomeworkPayload
     {

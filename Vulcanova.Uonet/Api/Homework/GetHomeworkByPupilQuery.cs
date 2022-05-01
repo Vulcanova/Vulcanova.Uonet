@@ -1,10 +1,10 @@
 using System;
 
-namespace Vulcanova.Uonet.Api.Homeworks
+namespace Vulcanova.Uonet.Api.Homework
 {
-    public record GetHomeworksByPupilQuery(
+    public record GetHomeworkByPupilQuery(
         int PupilId,
-        int PeriodNumber,
+        int PeriodId,
         DateTime LastSyncDate,
         int LastId = int.MinValue,
         int PageSize = 500): IApiQuery<HomeworkPayload[]>

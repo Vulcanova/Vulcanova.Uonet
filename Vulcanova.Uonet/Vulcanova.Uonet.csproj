@@ -19,8 +19,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <None Include="..\LICENSE" Pack="true" PackagePath="$(PackageLicenseFile)"/>
-        <None Include="..\README.md" Pack="true" PackagePath="$(PackageLicenseFile)"/>
+        <None Include="..\LICENSE" Pack="true" PackagePath="$(PackageLicenseFile)" />
+        <None Include="..\README.md" Pack="true" PackagePath="$(PackageLicenseFile)" />
     </ItemGroup>
 
     <ItemGroup>
