@@ -6,10 +6,10 @@ namespace Vulcanova.Uonet.Api.Homework
 {
     public class HomeworkPayload
     {
-        public long Id { get; set; }
+        public int Id { get; set; }
         public Guid Key { get; set; }
-        public long IdPupil { get; set; }
-        public long IdHomework { get; set; }
+        public int IdPupil { get; set; }
+        public int IdHomework { get; set; }
         public string Content { get; set; }
         public bool IsAnswerRequired { get; set; }
         public Date DateCreated { get; set; }
