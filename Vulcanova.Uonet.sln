@@ -6,7 +6,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vulcanova.Uonet.UnitTests",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{2BD974F7-F1F0-48E1-84CA-51151471E420}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FetchGrades", "samples\FetchGrades\FetchGrades.csproj", "{B2DE413D-B88E-44F7-BAF6-E42B2C79532E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vulcanova.Uonet.Samples.FetchGrades", "samples\Vulcanova.Uonet.Samples.FetchGrades\Vulcanova.Uonet.Samples.FetchGrades.csproj", "{B2DE413D-B88E-44F7-BAF6-E42B2C79532E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

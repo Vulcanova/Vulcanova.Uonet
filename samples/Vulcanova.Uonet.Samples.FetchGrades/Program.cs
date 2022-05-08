@@ -54,14 +54,15 @@ Console.WriteLine($"Unit name: {firstAccount.Unit.Name}");
 var unitApiClient = new ApiClient(requestSigner, firstAccount.Unit.RestUrl.ToString());
 
 // Fetch grades
-var gradesResponse = await unitApiClient.GetAsync(GetGradesByPupilQuery.ApiEndpoint, new GetGradesByPupilQuery(
-    firstAccount.Unit.Id,
-    firstAccount.Pupil.Id,
-    firstAccount.Periods.Single(p => p.Current).Id,
-    DateTime.MinValue,
-    500));
+var gradesResponse = await unitApiClient.GetAllAsync(GetGradesByPupilQuery.ApiEndpoint, new GetGradesByPupilQuery(
+        firstAccount.Unit.Id,
+        firstAccount.Pupil.Id,
+        firstAccount.Periods.Single(p => p.Current).Id,
+        DateTime.MinValue,
+        500))
+    .ToListAsync();
 
-foreach (var group in gradesResponse.Envelope.GroupBy(g => g.Column.Subject.Id))
+foreach (var group in gradesResponse.GroupBy(g => g.Column.Subject.Id))
 {
     var subjectName = group.First().Column.Subject.Name;
 
