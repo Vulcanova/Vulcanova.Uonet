@@ -4,7 +4,7 @@ using Vulcanova.Uonet.Api.Common.Models;
 
 namespace Vulcanova.Uonet.Api.Homework
 {
-    public class HomeworkPayload
+    public class HomeworkPayload : IPaginatedResource
     {
         public int Id { get; set; }
         public Guid Key { get; set; }

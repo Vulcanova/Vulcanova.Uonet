@@ -2,7 +2,7 @@ using Vulcanova.Uonet.Api.Common.Models;
 
 namespace Vulcanova.Uonet.Api.Exams
 {
-    public class ExamPayload
+    public class ExamPayload : IPaginatedResource
     {
         public int Id { get; set; }
         public string Key { get; set; }

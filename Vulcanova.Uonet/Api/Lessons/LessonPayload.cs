@@ -3,7 +3,7 @@ using Vulcanova.Uonet.Api.Common.Models;
 
 namespace Vulcanova.Uonet.Api.Lessons
 {
-    public class LessonPayload
+    public class LessonPayload : IPaginatedResource
     {
         public bool CalculatePresence { get; set; }
         public ClassUnit Clazz { get; set; }

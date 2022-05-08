@@ -7,8 +7,11 @@ namespace Vulcanova.Uonet.Api.Homework
         int PeriodId,
         DateTime LastSyncDate,
         int LastId = int.MinValue,
-        int PageSize = 500): IApiQuery<HomeworkPayload[]>
+        int PageSize = 500): IPaginatedApiQuery<HomeworkPayload>
     {
+        public IPaginatedApiQuery<HomeworkPayload> NextPage(int lastId)
+            => this with {LastId = lastId};
+
         public const string ApiEndpoint = "mobile/homework/byPupil";
     }
 } 

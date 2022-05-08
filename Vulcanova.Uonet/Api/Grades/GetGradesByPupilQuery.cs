@@ -8,8 +8,11 @@ namespace Vulcanova.Uonet.Api.Grades
         int PeriodId,
         DateTime LastSyncDate,
         int PageSize,
-        int LastId = int.MinValue) : IApiQuery<GradePayload[]>
+        int LastId = int.MinValue) : IPaginatedApiQuery<GradePayload>
     {
+        public IPaginatedApiQuery<GradePayload> NextPage(int lastId)
+            => this with {LastId = lastId};
+
         public const string ApiEndpoint = "mobile/grade/byPupil";
     }
 }

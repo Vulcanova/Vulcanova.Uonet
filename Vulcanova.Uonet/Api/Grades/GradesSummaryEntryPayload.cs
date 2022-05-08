@@ -3,7 +3,7 @@ using Vulcanova.Uonet.Api.Common.Models;
 
 namespace Vulcanova.Uonet.Api.Grades
 {
-    public class GradesSummaryEntryPayload
+    public class GradesSummaryEntryPayload : IPaginatedResource
     {
         public int Id { get; set; }
         public int PupilId { get; set; }

@@ -8,8 +8,11 @@ namespace Vulcanova.Uonet.Api.Lessons
         DateTime DateTo,
         DateTime LastSyncDate,
         int LastId = int.MinValue,
-        int PageSize = 500) : IApiQuery<LessonPayload[]>
+        int PageSize = 500) : IPaginatedApiQuery<LessonPayload>
     {
         public const string ApiEndpoint = "mobile/lesson/byPupil";
+
+        public IPaginatedApiQuery<LessonPayload> NextPage(int lastId)
+            => this with {LastId = lastId};
     }
 }
