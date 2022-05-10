@@ -5,7 +5,7 @@
 Nieoficjalny klient mobilnego API dziennika Vulcan UONET+
 
 ## Przykłady
-* [FetchGrades](https://github.com/VulcanovaApp/Vulcanova.Uonet/blob/main/samples/FetchGrades/Program.cs)
+* [FetchGrades](https://github.com/VulcanovaApp/Vulcanova.Uonet/blob/main/samples/Vulcanova.Uonet.Samples.FetchGrades/Program.cs)
 
 ## Wykorzystane projekty
 * [kapi2289/vulcan-api](https://github.com/kapi2289/vulcan-api/)
