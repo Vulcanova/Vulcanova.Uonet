@@ -41,14 +41,14 @@ public class ApiClientExtensionsTests
             page => Assert.True(page.SequenceEqual(items[10..15])),
             page => Assert.True(page.SequenceEqual(items[15..])));
     }
-}
 
-public record SampleResource(int Id) : IPaginatedResource;
+    private record SampleResource(int Id) : IPaginatedResource;
 
-public record SampleQuery(int PageSize, int LastId) : IPaginatedApiQuery<SampleResource>
-{
-    public IPaginatedApiQuery<SampleResource> NextPage(int lastId)
-        => this with {LastId = lastId};
+    private record SampleQuery(int PageSize, int LastId) : IPaginatedApiQuery<SampleResource>
+    {
+        public IPaginatedApiQuery<SampleResource> NextPage(int lastId)
+            => this with {LastId = lastId};
 
-    public const string ApiEndpoint = "https://resource";
+        public const string ApiEndpoint = "https://resource";
+    }
 }
