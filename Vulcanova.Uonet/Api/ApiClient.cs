@@ -53,11 +53,6 @@ namespace Vulcanova.Uonet.Api
 
             var result = await SendMessageAsync<TResponse>(requestMessage);
 
-            if (result.Status.Code != 0)
-            {
-                throw new VulcanException(result.Status.Message);
-            }
-
             return result;
         }
 
@@ -66,9 +61,16 @@ namespace Vulcanova.Uonet.Api
         private static async Task<ApiResponse<TResponse>> SendMessageAsync<TResponse>(HttpRequestMessage requestMessage)
         {
             var responseMessage = await Config.HttpClient.SendAsync(requestMessage);
-            var res = await responseMessage.Content.ReadAsStringAsync();
+            var content = await responseMessage.Content.ReadAsStringAsync();
 
-            return JsonSerializer.Deserialize<ApiResponse<TResponse>>(res);
+            var result = JsonSerializer.Deserialize<ApiResponse<TResponse>>(content);
+
+            if (result!.Status.Code != 0)
+            {
+                throw new VulcanException(result.Status.Code, result.Status.Message);
+            }
+
+            return result;
         }
     }
 }
