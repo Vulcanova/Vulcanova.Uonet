@@ -32,5 +32,6 @@ namespace Vulcanova.Uonet.Api.Schedule
     {
         Exemption = 1,
         Substitution,
+        UnitExemption = 4
     }
 }
