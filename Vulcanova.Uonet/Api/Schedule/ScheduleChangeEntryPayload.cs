@@ -10,7 +10,7 @@ namespace Vulcanova.Uonet.Api.Schedule
         public Date LessonDate { get; set; }
         public object ChangeDate { get; set; }
         public string Note { get; set; }
-        public object Reason { get; set; }
+        public string Reason { get; set; }
         public object Event { get; set; }
         public Room Room { get; set; }
         public TimeSlot TimeSlot { get; set; }
