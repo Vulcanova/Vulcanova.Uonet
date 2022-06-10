@@ -2,7 +2,7 @@ using System;
 
 namespace Vulcanova.Uonet.Api.Grades
 {
-    public record GetBehaviourGradeByPupilQuery(
+    public record GetBehaviourGradesByPupilQuery(
         int UnitId,
         int PupilId,
         int PeriodId,
