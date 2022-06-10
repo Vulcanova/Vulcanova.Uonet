@@ -19,10 +19,10 @@ namespace Vulcanova.Uonet.Api
             {
                 var response = await client.GetAsync(url, query);
                 var data = response.Envelope;
-                
-                if (data.Length == 0) yield break;
 
                 yield return data;
+
+                if (data.Length < query.PageSize) yield break;
 
                 var newMaxId = data.Max(d => d.Id);
 
