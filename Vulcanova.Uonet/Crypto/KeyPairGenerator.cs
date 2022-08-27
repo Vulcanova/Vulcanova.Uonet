@@ -13,10 +13,12 @@ namespace Vulcanova.Uonet.Crypto
 {
     public static class KeyPairGenerator
     {
+        private static readonly SecureRandom Random = new();
+
         public static (string PemPrivateKey, X509Certificate Cert) GenerateKeyPair()
         {
             var keygen = new RsaKeyPairGenerator();
-            keygen.Init(new KeyGenerationParameters(new SecureRandom(), 2048));
+            keygen.Init(new KeyGenerationParameters(Random, 2048));
 
             var pair = keygen.GenerateKeyPair();
 
@@ -31,7 +33,7 @@ namespace Vulcanova.Uonet.Crypto
         private static X509Certificate GenerateCert(AsymmetricCipherKeyPair pair)
         {
             var x509 = new X509V3CertificateGenerator();
-            x509.SetSerialNumber(BigInteger.One);
+            x509.SetSerialNumber(new BigInteger(128, Random));
 
             var dn = new X509Name("CN=APP_CERTIFICATE CA Certificate");
             
