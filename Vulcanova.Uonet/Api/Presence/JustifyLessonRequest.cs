@@ -4,7 +4,7 @@ namespace Vulcanova.Uonet.Api.Presence
         string Reason,
         int LessonClassId,
         int PupilId,
-        int UnitId) : IApiRequest<JustifyLessonResponse>
+        int LoginId) : IApiRequest<JustifyLessonResponse>
     {
         public const string ApiEndpoint = "mobile/presence/justification/lesson";
     }
