@@ -27,6 +27,11 @@ namespace Vulcanova.Uonet.Api
                 {
                     value = ((DateTime) rawValue).ToString("yyyy-MM-dd");
                 }
+                else if (propertyInfo.PropertyType.IsEnum)
+                {
+                    var enumValue = Convert.ChangeType(rawValue, Enum.GetUnderlyingType(propertyInfo.PropertyType));
+                    value = enumValue.ToString();
+                }
                 else
                 {
                     value = rawValue.ToString();
