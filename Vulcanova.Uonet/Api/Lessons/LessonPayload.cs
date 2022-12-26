@@ -8,8 +8,8 @@ namespace Vulcanova.Uonet.Api.Lessons
         public bool CalculatePresence { get; set; }
         public ClassUnit Clazz { get; set; }
         public List<object> Collection { get; set; }
-        public Date DateModify { get; set; }
-        public Date Day { get; set; }
+        public DateTimeInfo DateModify { get; set; }
+        public DateTimeInfo Day { get; set; }
         public Distribution Distribution { get; set; }
         public string GlobalKey { get; set; }
         public string GroupDefinition { get; set; }

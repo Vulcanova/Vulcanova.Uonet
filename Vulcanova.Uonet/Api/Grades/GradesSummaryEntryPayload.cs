@@ -15,6 +15,6 @@ namespace Vulcanova.Uonet.Api.Grades
         public string Entry2 { get; set; }
         [JsonPropertyName("Entry_3")]
         public string Entry3 { get; set; }
-        public Date DateModify { get; set; }
+        public DateTimeInfo DateModify { get; set; }
     }
 }

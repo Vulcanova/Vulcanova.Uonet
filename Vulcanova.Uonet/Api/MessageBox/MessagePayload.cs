@@ -11,8 +11,8 @@ namespace Vulcanova.Uonet.Api.MessageBox
         public Guid ThreadKey { get; set; }
         public string Subject { get; set; }
         public string Content { get; set; }
-        public Date DateSent { get; set; }
-        public Date DateRead { get; set; }
+        public DateTimeInfo DateSent { get; set; }
+        public DateTimeInfo DateRead { get; set; }
         // TODO: What does this value mean?
         public int Status { get; set; }
         public Correspondent Sender { get; set; }

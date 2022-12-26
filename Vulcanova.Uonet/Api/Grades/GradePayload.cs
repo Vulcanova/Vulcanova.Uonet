@@ -14,8 +14,8 @@ namespace Vulcanova.Uonet.Api.Grades
         public decimal? Value { get; set; }
         public object Numerator { get; set; }
         public object Denominator { get; set; }
-        public Date DateCreated { get; set; }
-        public Date DateModify { get; set; }
+        public DateTimeInfo DateCreated { get; set; }
+        public DateTimeInfo DateModify { get; set; }
         public Teacher Creator { get; set; }
         public Teacher Modifier { get; set; }
         public Column Column { get; set; }

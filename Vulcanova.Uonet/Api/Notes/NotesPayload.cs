@@ -9,8 +9,8 @@ namespace Vulcanova.Uonet.Api.Notes
         public Guid Key { get; set; }
         public int IdPupil { get; set; }
         public bool Positive { get; set; }
-        public Date DateValid { get; set; }
-        public Date DateModify { get; set; }
+        public DateTimeInfo DateValid { get; set; }
+        public DateTimeInfo DateModify { get; set; }
         public Teacher Creator { get; set; }
         public Category Category { get; set; }
         public string Content { get; set; }
