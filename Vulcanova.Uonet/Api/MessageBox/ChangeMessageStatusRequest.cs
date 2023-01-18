@@ -9,7 +9,8 @@ namespace Vulcanova.Uonet.Api.MessageBox
     {
         public enum SetMessageStatus
         {
-            Read = 1
+            Read = 1,
+            Trash
         }
 
         public const string ApiEndpoint = "mobile/messagebox/message/status";
