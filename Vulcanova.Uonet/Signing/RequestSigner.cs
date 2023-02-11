@@ -21,7 +21,7 @@ namespace Vulcanova.Uonet.Signing
         public ValueTask<Dictionary<string, string>> CreateSignedHeaders(string fullUrl)
             => CreateSignedHeaders(null, fullUrl);
 
-        public ValueTask<Dictionary<string, string>> CreateSignedHeaders(string body, string fullUrl)
+        public virtual ValueTask<Dictionary<string, string>> CreateSignedHeaders(string body, string fullUrl)
         {
             var signatureHeaders = ValuesSigner.GetSignatureHeaders(_fingerprint, _privateKey, body, fullUrl);
 
