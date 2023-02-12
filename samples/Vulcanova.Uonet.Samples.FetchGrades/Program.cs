@@ -51,7 +51,9 @@ var firstAccount = registerHebeResponse.Envelope[0];
 Console.WriteLine($"Unit name: {firstAccount.Unit.Name}");
 
 // Switch to unit API
-var unitApiClient = new ApiClient(requestSigner, firstAccount.Unit.RestUrl.ToString());
+var contextualSigner = new ContextualRequestSigner(x509Cert2.Thumbprint, pk, firebaseToken, firstAccount.Context);
+
+var unitApiClient = new ApiClient(contextualSigner, firstAccount.Unit.RestUrl.ToString());
 
 // Fetch grades
 var gradesResponse = await unitApiClient.GetAllAsync(GetGradesByPupilQuery.ApiEndpoint, new GetGradesByPupilQuery(
