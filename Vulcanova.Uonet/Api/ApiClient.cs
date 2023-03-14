@@ -63,6 +63,16 @@ namespace Vulcanova.Uonet.Api
             var responseMessage = await Config.HttpClient.SendAsync(requestMessage);
             var content = await responseMessage.Content.ReadAsStringAsync();
 
+            if (responseMessage.Content.Headers.ContentType.MediaType == "text/html")
+            {
+                if (content.Contains("<title>Przerwa techniczna</title>"))
+                {
+                    throw new MaintenanceBreakException(content);
+                }
+
+                throw new UnexpectedApiResponseException(content);
+            }
+
             var result = JsonSerializer.Deserialize<ApiResponse<TResponse>>(content);
 
             if (result!.Status.Code != 0)
