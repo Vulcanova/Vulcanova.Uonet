@@ -32,6 +32,7 @@ namespace Vulcanova.Uonet.Api.Schedule
     {
         Exemption = 1,
         Substitution,
-        ClassAbsence = 4
+        Rescheduled,
+        ClassAbsence
     }
 }
