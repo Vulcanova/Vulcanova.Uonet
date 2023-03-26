@@ -5,7 +5,7 @@ namespace Vulcanova.Uonet.Api.Notes
 {
     public class NotesPayload : IPaginatedResource
     {
-        public int Id { get; }
+        public int Id { get; set; }
         public Guid Key { get; set; }
         public int IdPupil { get; set; }
         public bool Positive { get; set; }
