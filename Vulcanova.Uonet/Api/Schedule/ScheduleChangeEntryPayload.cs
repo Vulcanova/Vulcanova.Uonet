@@ -8,7 +8,7 @@ namespace Vulcanova.Uonet.Api.Schedule
         public int UnitId { get; set; }
         public int ScheduleId { get; set; }
         public DateTimeInfo LessonDate { get; set; }
-        public object ChangeDate { get; set; }
+        public DateTimeInfo ChangeDate { get; set; }
         public string Note { get; set; }
         public string Reason { get; set; }
         public object Event { get; set; }
