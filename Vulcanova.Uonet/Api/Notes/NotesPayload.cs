@@ -21,7 +21,7 @@ namespace Vulcanova.Uonet.Api.Notes
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public object Type { get; set; }
-        public object DefaultPoints { get; set; }
+        public string Type { get; set; }
+        public int? DefaultPoints { get; set; }
     }
 }
