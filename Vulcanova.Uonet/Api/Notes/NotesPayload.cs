@@ -14,7 +14,7 @@ namespace Vulcanova.Uonet.Api.Notes
         public Teacher Creator { get; set; }
         public Category Category { get; set; }
         public string Content { get; set; }
-        public object Points { get; set; }
+        public int? Points { get; set; }
     }
 
     public class Category
