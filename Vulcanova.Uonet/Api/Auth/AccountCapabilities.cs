@@ -9,5 +9,6 @@ namespace Vulcanova.Uonet.Api.Auth
         public const string MessageArchive = "MESSAGE_ARCHIVE";
         public const string Regular = "REGULAR";
         public const string JustificationsEnabled = "JUSTIFICATIONS_ENABLED";
+        public const string GradesAverageEnabled = "AVG_ENABLED";
     }
 }
