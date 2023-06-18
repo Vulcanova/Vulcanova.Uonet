@@ -11,7 +11,7 @@ namespace Vulcanova.Uonet.Api.Schedule
         public DateTimeInfo ChangeDate { get; set; }
         public string Note { get; set; }
         public string Reason { get; set; }
-        public object Event { get; set; }
+        public string Event { get; set; }
         public Room Room { get; set; }
         public TimeSlot TimeSlot { get; set; }
         public Subject Subject { get; set; }
