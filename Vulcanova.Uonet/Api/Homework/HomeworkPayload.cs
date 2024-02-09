@@ -19,6 +19,6 @@ namespace Vulcanova.Uonet.Api.Homework
         public DateTimeInfo AnswerDeadline { get; set; }
         public Teacher Creator { get; set; }
         public Subject Subject { get; set; }
-        public List<object> Attachments { get; set; }
+        public List<Attachment> Attachments { get; set; }
     }
 }

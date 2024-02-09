@@ -22,12 +22,6 @@ namespace Vulcanova.Uonet.Api.MessageBox
         public int Importance { get; set; }
     }
 
-    public class Attachment
-    {
-        public string Name { get; set; }
-        public string Link { get; set; }
-    }
-
     public class Extras
     {
         public string DisplayedClass { get; set; }
