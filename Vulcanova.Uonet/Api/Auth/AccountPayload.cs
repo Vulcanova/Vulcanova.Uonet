@@ -70,7 +70,7 @@ namespace Vulcanova.Uonet.Api.Auth
         public int Id { get; set; }
         public YearEnd YearStart { get; set; }
         public YearEnd YearEnd { get; set; }
-        public int PupilNumber { get; set; }
+        public int? PupilNumber { get; set; }
     }
 
     public class YearEnd
