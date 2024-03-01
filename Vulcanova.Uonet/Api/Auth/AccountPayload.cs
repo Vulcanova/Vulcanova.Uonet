@@ -17,6 +17,7 @@ namespace Vulcanova.Uonet.Api.Auth
         public string[] Capabilities { get; set; }
         public Educator[] Educators { get; set; }
         public Pupil Pupil { get; set; }
+        public int? CaretakerId { get; set; }
         public Period[] Periods { get; set; }
         public Journal Journal { get; set; }
         public Constraints Constraints { get; set; }
